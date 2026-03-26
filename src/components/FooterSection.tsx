@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Clock, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Clock, MapPin, Phone, Mail } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 
 const FooterSection = () => {
@@ -37,6 +37,13 @@ const FooterSection = () => {
               <Phone size={16} className="mt-0.5 shrink-0 text-accent" />
               <span>2234-5516 / 2234-5507</span>
             </div>
+            <a
+              href="mailto:pobando@globalvetsa.com"
+              className="flex items-start gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors"
+            >
+              <Mail size={16} className="mt-0.5 shrink-0 text-accent" />
+              <span>pobando@globalvetsa.com</span>
+            </a>
           </div>
 
           {/* Social */}
