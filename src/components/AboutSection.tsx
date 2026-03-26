@@ -38,23 +38,6 @@ const AboutSection = () => {
           el año 2007. Más de 1,240 m² de almacenaje.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-16"
-        >
-          <video
-            controls
-            playsInline
-            preload="none"
-            className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
-          >
-            <source src="/videos/institucional-globalvet.mp4" type="video/mp4" />
-          </video>
-        </motion.div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, i) => (
             <motion.div
