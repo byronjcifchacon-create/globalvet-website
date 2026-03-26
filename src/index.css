@@ -1,0 +1,100 @@
+@tailwind base;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    --primary: 2 73% 31%;     /* #8d1a14 - Rojo Oscuro */
+    --primary-foreground: 0 0% 100%;  /* Blanco */
+    --secondary: 4 56% 53%;   /* #cb4c44 - Rojo Medio */
+    --secondary-foreground: 0 0% 100%;  /* Blanco */
+    --accent: 36 60% 72%;    /* #d6b285 - Dorado/Beige */
+    --accent-foreground: 0 0% 15%;  /* Oscuro */
+    --neutral: 0 0% 62%;     /* #9d9e9f - Gris */
+    --neutral-foreground: 0 0% 100%;  /* Blanco */
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 2 73% 31%;
+
+    --radius: 0.5rem;
+
+    --font-display: 'Helvetica Neue', Helvetica, 'Inter', system-ui, sans-serif;
+    --font-body: 'Helvetica Neue', Helvetica, 'Inter', system-ui, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+    font-weight: 400; /* Roman */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700; /* Bold */
+  }
+}
+
+@layer utilities {
+  .font-helvetica-light {
+    font-family: var(--font-display);
+    font-weight: 300;
+  }
+  .font-helvetica-roman {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+  .font-helvetica-bold {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+    font-family: var(--font-display);
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl leading-relaxed max-w-3xl mx-auto;
+    color: hsl(var(--muted-foreground));
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
