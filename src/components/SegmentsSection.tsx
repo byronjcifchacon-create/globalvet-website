@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 
 const segments = [
-  { name: "Veterinarias", image: "/images/seg-veterinarias.png" },
-  { name: "Pet Shops", image: "/images/seg-petshops.png" },
-  { name: "Acuarios", image: "/images/seg-acuarios.png" },
-  { name: "Agroservicios", image: "/images/seg-agroservicios.png" },
-  { name: "Granjas", image: "/images/seg-granjas.png" },
-  { name: "Planta de Alimentos", image: "/images/seg-planta.png" },
-  { name: "Lecherías", image: "/images/seg-lecherias.png" },
-  { name: "Fincas de Reses", image: "/images/seg-fincas.png" },
+  { name: "Veterinarias", image: "/images/seg-veterinarias.webp" },
+  { name: "Pet Shops", image: "/images/seg-petshops.webp" },
+  { name: "Acuarios", image: "/images/seg-acuarios.webp" },
+  { name: "Agroservicios", image: "/images/seg-agroservicios.webp" },
+  { name: "Granjas", image: "/images/seg-granjas.webp" },
+  { name: "Planta de Alimentos", image: "/images/seg-planta.webp" },
+  { name: "Lecherías", image: "/images/seg-lecherias.webp" },
+  { name: "Fincas de Reses", image: "/images/seg-fincas.webp" },
 ];
 
 const SegmentsSection = () => {
