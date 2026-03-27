@@ -5,7 +5,7 @@ const TOTAL_IMAGES = 37;
 const removedImages = [29, 33, 34];
 const allImages = Array.from({ length: TOTAL_IMAGES }, (_, i) => i + 1)
   .filter(num => !removedImages.includes(num))
-  .map(num => `/images/${num}.png`);
+  .map(num => `/images/${num}.webp`);
 const GRID_SIZE = 12;
 
 const TeamSection = () => {
@@ -44,9 +44,8 @@ const TeamSection = () => {
   useEffect(() => {
     if (slots.length === 0) return;
     
-    // Intervalo más corto para que se sienta que siempre hay algo moviéndose
-    // 1.5 segundos entre cambios de imágenes individuales
-    const interval = setInterval(rotateImage, 1500);
+    const isMobile = window.innerWidth < 768;
+    const interval = setInterval(rotateImage, isMobile ? 3000 : 1500);
     return () => clearInterval(interval);
   }, [slots.length, rotateImage]);
 
