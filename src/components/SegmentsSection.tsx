@@ -9,6 +9,9 @@ const segments = [
   { name: "Planta de Alimentos", image: "/images/seg-planta.webp" },
   { name: "Lecherías", image: "/images/seg-lecherias.webp" },
   { name: "Fincas de Reses", image: "/images/seg-fincas.webp" },
+  { name: "Camaroneras", image: "/images/seg-camaroneras.webp" },
+  { name: "Aceite de Palma", image: "/images/seg-aceitepalma.webp" },
+  { name: "Tilapias", image: "/images/seg-tilapias.webp" },
 ];
 
 const SegmentsSection = () => {
@@ -30,7 +33,7 @@ const SegmentsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
           {segments.map((seg, i) => (
             <motion.div
               key={seg.name}
