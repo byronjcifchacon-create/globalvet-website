@@ -33,7 +33,7 @@ const SegmentsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {segments.map((seg, i) => (
             <motion.div
               key={seg.name}
